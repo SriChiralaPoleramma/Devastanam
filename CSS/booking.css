@@ -3,8 +3,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background: url('images/temple-bg.jpg') no-repeat center center fixed;
     background-size: cover;
-    margin: 5px;
-    padding: 6px;
+    margin: 0px;
+    padding: 0px;
     color: #333;
     line-height: 1.6;
 }
