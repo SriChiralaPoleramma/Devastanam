@@ -21,11 +21,11 @@ body {
     /* Removed scroll-behavior: smooth; here, as JavaScript will handle it for navigation */
 }
 
-/* 🌿 Header Styling */
+/* 🌿 Header Styling for All Devices */
 header {
     background: linear-gradient(to right, #ff9800, #e65100);
     color: white;
-    padding: 15px 0;
+    padding: 10px 0; /* Reduced vertical padding */
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
@@ -36,6 +36,20 @@ header {
     z-index: 100;
 }
 
+/* Adjust header font size for smaller screens */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.1rem; /* Slightly smaller font on medium screens */
+        padding: 8px 0; /* Further reduced vertical padding on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        font-size: 1rem; /* Even smaller font on small screens */
+        padding: 6px 0; /* Minimum vertical padding on small screens */
+    }
+}
 /* ==========================================================================
     3. Logo Styles
     ========================================================================== */
@@ -302,7 +316,7 @@ footer p {
 #timer {
     font-size: 2rem;
     font-weight: bold;
-    color: #ff4500;
+    color: hsl(16, 100%, 50%);
 }
 
 /* Temple history section */
